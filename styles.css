@@ -1,6 +1,21 @@
+@font-face {
+    font-family: 'NorseBold';
+    src: url('assets/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body{
+    background-color: black;
+    padding: 0 10px;
+    margin: 0;
+}
+
 .container{
+    margin:0;
     display: flex;
     font-weight: 800;
+    height: 700px;
 
 }
 
@@ -13,14 +28,31 @@ section{
     padding-left: 30px;
 }
 
-.image-sidebar{
-    max-height: 100%;
-    max-width: 30%;
+section.one{
+    padding-top:100px;
+}
+section.two{
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-img{
-    max-width: 100%;
+section.three{
+    padding-top: 20px;
+  
 }
+
+.image-sidebar{
+    position: relative;
+    max-height: 100%;
+    width: 30%;
+    min-width: 200px;
+    background-image: url(assets/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 
 fieldset{
@@ -46,6 +78,33 @@ p.bold{
     background-color: rgb(236, 227, 227);
     height: 40%;
 }
-.opener p{
-    margin-top: 100px;
+
+div.logo{
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    top: 190px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 50%);
+    padding: 5px;
+    font-family: 'NorseBold';
+    color: white;
+    font-size: 50px;
+    gap: 5px;
+}
+
+img.logo{
+    width: auto;
+    height:60%;
+}
+
+.credit{
+    position:absolute;
+    bottom: 10px;
+    justify-content: center;
+    color: white;
+    align-self: center;
 }
