@@ -35,49 +35,49 @@
             </section>
 
             <section class="two">
-                <form>
+                <form id="reg-form" action="#" method="get">
                     <p class="bold">Let's do this!</p>
                     <fieldset class="name">
 
                         <div class="form-group">
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name">
+                            <input type="text" id="first-name" placeholder="Thor">
                         </div>
 
                         <div class="form-group">
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name">
+                            <input type="text" id="last-name" placeholder="Odinson">
                         </div>
                     </fieldset>
 
                     <fieldset class="contact-info">
                         <div class="form-group">
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email">
+                            <input type="email" id="email" placeholder="thor@odin.com">
                         </div>
 
                         <div class="form-group">
                             <label for="phone">PHONE NUMBER</label>
-                            <input type="tel" id="tel">
+                            <input type="tel" id="tel" placeholder="000-000" >
                         </div>
                     </fieldset>
 
                     <fieldset class="password">
                         <div class="form-group">
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password">
+                            <input type="password" id="password" placeholder="3-16 characters">
                         </div>
 
                         <div class="form-group">
                             <label for="password-confirm">CONFIRM PASSWORD</label>
-                            <input type="password" id="password-confirm">
+                            <input type="password" id="password-confirm" placeholder="3-16 characters">
                         </div>
                     </fieldset>
                 </form>
             </section>
 
             <section class="three uneven">
-                <button>Create Account</button>
+                <button type="submit" id="create-account-button" form="reg-form">Create Account</button>
                 <p>Already have an account? <a href="google.com">Log in</a></p>
             </section>
         </div>
